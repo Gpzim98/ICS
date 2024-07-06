@@ -1,9 +1,0 @@
-utilizando um arquivo script.bat
-
-ele deve:
-criar uma pasta chamada teste_ics
-dentro desta pasta criar uma subpasta chamada exercicio
-
-dentro da pasta exercicio criar um arquivo 
-chamado competicao.txt
-com o conteudo: Programadores e Hackers
