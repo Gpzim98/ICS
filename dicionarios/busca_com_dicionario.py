@@ -18,3 +18,4 @@ else:
 
 print(dicionario[5])
 print(dicionario2['002'])
+

@@ -11,8 +11,8 @@ carro = {
     }
 }
 
-print('Tamanho do tanque:' + str(carro['LitrosTanque']))
+print('Tamanho do tanque:' + str(carro.get('LitrosTanque')))
 
-ultimosDonos = carro['UltimosDonos']
-ultimoDono = ultimosDonos['1']
+ultimosDonos = carro.get('UltimosDonos')
+ultimoDono = ultimosDonos.get('1')
 print(ultimoDono[0])

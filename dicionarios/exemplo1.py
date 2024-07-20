@@ -5,6 +5,7 @@ dados = {
     "003":   "Beltrano"
 }
 
+
 lista = ['Banana', 'Maca', 'Melao', 'Melancia', 'Morango']
 tupla = ('Item', 'Segunda')
 
