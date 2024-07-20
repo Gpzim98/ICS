@@ -1,37 +1,24 @@
-# classes
-# objetos
+from Pessoa import Pessoa
 
-'''
-Estilo procedural - o que vinhamos usando ate o momento
-x
-OO - Estilo de programacao
-Que se baseia em modelar um problem atras de classes (modelar)
-    As classes possuem dados e comportamentos
-    Dados = Representa as informacoes do problema no mundo real
-    Comportamento = O que vc faz com aqueles dados. Como vc manipula os dados
-'''
-
-class Pessoa:
-    nome = ''
-    sobrenome = ''
-    idade = None
-    profissao = 'Engenheiro'
-
-    # Metodo construtor 
-    def __init__(self, nome_passado, sobrenome_passado, idade_passada):
-        self.nome = nome_passado
-        self.sobrenome = sobrenome_passado
-        self.idade = idade_passada
-
-    def retorna_nome_completo(self):
-        return self.nome + self.sobrenome
-    
-    def imprime_dados_completos(self):
-        return self.nome + ' ' + self.sobrenome + ' ' + str(self.idade)
+def comparar_idade(pessoa1, pessoa2):
+    if pessoa1.idade > pessoa2.idade:
+        print("Pessoa 1 e a mais velha")
+    elif pessoa2.idade > pessoa1.idade:
+        print('Pessoa 2 e a mais velha')
+    else:
+        print('Elas tem a mesma idade')
 
 # Instanciar um objeto
-pessoa = Pessoa('Fulano', 'De tal', 33)
+pessoa = Pessoa('Fulano', 'De tal', 33, '')
 print(pessoa.imprime_dados_completos())
 
-pessoa2 = Pessoa('Beltrano', 'Silva', 43)
+pessoa2 = Pessoa('Beltrano', 'Silva', 43, 'Avenida Manoel Joaquim de Melo 806')
 print(pessoa2.imprime_dados_completos())
+
+pessoa2.modifica_profissao('Enfermeiro')
+print(pessoa2.profissao)
+print(pessoa2.endereco_completo())
+pessoa2.aniversario()
+print(pessoa2.idade)
+comparar_idade(pessoa, pessoa2)
+
