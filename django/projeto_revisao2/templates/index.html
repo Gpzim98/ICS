@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <h1>{{titulo_pagina}}</h1>
@@ -12,9 +13,9 @@
 
     <!-- Jinja -->
      <ol>
-        {% for var in lista_visitas %}
+        {% for visitante in lista_visitas %}
 
-            <li>Nome do visitante: {{var}}</li>
+            <li>Nome do visitante: {{visitante}}</li>
 
         {% endfor %}
      </ol>
