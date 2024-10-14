@@ -5,4 +5,5 @@ import exercicios.views
 urlpatterns = [
     path('', exercicios.views.home, name='home'),
     path('ex1/', exercicios.views.ex1, name='ex1'),
+    path('ex2/', exercicios.views.ex2, name='ex2'),
 ]
