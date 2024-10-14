@@ -11,3 +11,5 @@ while True:
     numero_digitado = input("digite um numero para testar:")
     res = calcula_par_impar(numero_digitado)
     print(res)
+
+# teste
